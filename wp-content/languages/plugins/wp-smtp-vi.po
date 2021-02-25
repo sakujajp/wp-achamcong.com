@@ -1,0 +1,105 @@
+# Translation of Plugins - WP SMTP - Stable (latest release) in Vietnamese
+# This file is distributed under the same license as the Plugins - WP SMTP - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-05-25 19:04:59+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Plugins - WP SMTP - Stable (latest release)\n"
+
+#. Plugin Name of the plugin
+#: inc/Admin.php:21
+msgid "WP SMTP"
+msgstr "WP SMTP"
+
+#: wp_smtp_admin.php:245
+msgid "Send Test"
+msgstr "Gửi thử"
+
+#: wp_smtp_admin.php:232
+msgid "Message:"
+msgstr "Tin nhắn:"
+
+#: wp_smtp_admin.php:212
+msgid "To:"
+msgstr "Đến:"
+
+#: wp_smtp_admin.php:222
+msgid "Subject:"
+msgstr "Chủ đề:"
+
+#: wp_smtp_admin.php:208
+msgid "Test your settings"
+msgstr "Kiểm tra cài đặt của bạn"
+
+#: wp_smtp_admin.php:202
+msgid "Save Changes"
+msgstr "Lưu thay đổi"
+
+#: wp_smtp_admin.php:193
+msgid "Delete options while deactivate this plugin."
+msgstr "Xóa các tùy chọn trong khi tắt plugin này."
+
+#: wp_smtp_admin.php:187
+msgid "Delete Options"
+msgstr "Xóa tùy chọn"
+
+#: wp_smtp_admin.php:176
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: wp_smtp_admin.php:165
+msgid "Username"
+msgstr "Tên người dùng"
+
+#: wp_smtp_admin.php:147
+msgid "SMTP Authentication"
+msgstr "Xác thực SMTP"
+
+#: wp_smtp_admin.php:136
+msgid "SMTP Port"
+msgstr "Cổng SMTP"
+
+#: wp_smtp_admin.php:112
+msgid "SMTP Secure"
+msgstr "Bảo mật SMTP"
+
+#: wp_smtp_admin.php:101
+msgid "SMTP Host"
+msgstr "Máy chủ SMTP"
+
+#: wp_smtp_admin.php:90
+msgid "From Name"
+msgstr "Từ tên"
+
+#: wp_smtp_admin.php:79
+msgid "From"
+msgstr "Từ"
+
+#: wp_smtp_admin.php:56
+msgid "Message sent!"
+msgstr "Đã gửi tin nhắn!"
+
+#: wp_smtp_admin.php:51
+msgid "Some of the test fields are empty or an invalid email supplied"
+msgstr "Một số trường gửi thử bị trống hoặc email không hợp lệ"
+
+#: wp_smtp_admin.php:27
+msgid "Options saved."
+msgstr "Đã lưu tùy chọn."
+
+#: wp_smtp_admin.php:25
+msgid "The field \"SMTP Host\" can not be left blank!"
+msgstr "Trường \"Máy chủ SMTP\" không được để trống!"
+
+#: wp_smtp_admin.php:23
+msgid "The field \"From\" must be a valid email address!"
+msgstr "Trường \"Từ\" phải là địa chỉ email hợp lệ!"
+
+#: wp-smtp.php:109
+msgid "Settings"
+msgstr "Cài đặt"
