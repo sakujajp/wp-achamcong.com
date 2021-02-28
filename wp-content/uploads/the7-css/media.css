@@ -496,14 +496,14 @@
     background: none !important;
   }
   body:not(.transparent) .masthead:not(.side-header) {
-    background-color: #ffffff;
+    background-color: #fea621;
   }
   .transparent .masthead:not(.mixed-header),
   .transparent .masthead.masthead-mobile-header {
     background: #eeee22;
   }
   .sticky-mobile-on.masthead:not(.side-header) {
-    background-color: #ffffff !important;
+    background-color: #fea621 !important;
   }
   .sticky-mobile-header:not(.transparent):not(.hidden-header) .mobile-header-space {
     display: block;
