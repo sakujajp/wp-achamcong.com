@@ -189,6 +189,159 @@ final class HPR {
 			</div>
 			<?php endif; ?>
 		</div>
+         <style>
+         	.hotline-phone-ring-wrap2{
+         		position: fixed;
+			    bottom: 0;
+			    left: 0;
+			    z-index: 999999;
+         	}
+         	.hotline-phone-ring2{
+               position: relative;
+			    visibility: visible;
+			    background-color: transparent;
+			    width: 110px;
+			    height: 110px;
+			    cursor: pointer;
+			    z-index: 11;
+			    -webkit-backface-visibility: hidden;
+			    -webkit-transform: translateZ(0);
+			    transition: visibility .5s;
+			    left: 0;
+			    bottom: 0;
+			    display: block;
+         	}
+         	.hotline-bar2 {
+				    background: rgb(254 166 33 / 70%);
+				}
+			.hotline-bar2 {
+			    position: absolute;
+			    background: rgba(230, 8, 8, 0.75);
+			    height: 40px;
+			    width: 200px;
+			    line-height: 40px;
+			    border-radius: 3px;
+			    padding: 0 10px;
+			    background-size: 100%;
+			    cursor: pointer;
+			    transition: all 0.8s;
+			    -webkit-transition: all 0.8s;
+			    z-index: 9;
+			    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 10%);
+			    border-radius: 50px !important;
+			    /* width: 175px !important; */
+			    left: 33px;
+			    bottom: 125px;
+			}
+			.hotline-bar2 > a {
+			    color: #fff;
+			    text-decoration: none;
+			    font-size: 15px;
+			    font-weight: bold;
+			    text-indent: 50px;
+			    display: block;
+			    letter-spacing: 1px;
+			    line-height: 40px;
+			    font-family: Arial;
+			}
+			.hotline-phone-ring-circle2 {
+			    border-color: #fea621;
+			}
+			.hotline-phone-ring-circle2 {
+			    width: 87px;
+			    height: 87px;
+			    top: -82px;
+			    left: 10px;
+			    position: absolute;
+			    background-color: transparent;
+			    border-radius: 100%;
+			    border: 2px solid #fea621;
+			    -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+			    animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+			    transition: all .5s;
+			    -webkit-transform-origin: 50% 50%;
+			    -ms-transform-origin: 50% 50%;
+			    transform-origin: 50% 50%;
+			    opacity: 0.5;
+			}
+			.hotline-phone-ring-circle-fill2, .hotline-phone-ring-img-circle2, .hotline-bar2 {
+				    background-color: #fea621;
+				}
+			.hotline-phone-ring-circle-fill2 {
+			    width: 57px;
+			    height: 57px;
+			    top: -65px;
+			    left: 25px;
+			    position: absolute;
+			    background-color: #fea621;
+			    border-radius: 100%;
+			    border: 2px solid transparent;
+			    -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+			    animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+			    transition: all .5s;
+			    -webkit-transform-origin: 50% 50%;
+			    -ms-transform-origin: 50% 50%;
+			    transform-origin: 50% 50%;
+			}
+			.hotline-phone-ring-img-circle2 {
+			    background-color: #fea621;
+			    width: 33px;
+			    height: 33px;
+			    top: -53px;
+			    left: 37px;
+			    position: absolute;
+			    background-size: 20px;
+			    border-radius: 100%;
+			    border: 2px solid transparent;
+			    -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+			    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+			    -webkit-transform-origin: 50% 50%;
+			    -ms-transform-origin: 50% 50%;
+			    transform-origin: 50% 50%;
+			    display: -webkit-box;
+			    display: -webkit-flex;
+			    display: -ms-flexbox;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			}
+			.hotline-phone-ring-img-circle2 .pps-btn-img2 img {
+			    width: 20px;
+			    height: 20px;
+			}
+			.hotline-phone-ring-img-circle2 a i{
+				color:  #ffff;
+			}
+			@media (max-width: 768px){
+				.hotline-bar2 {
+				    display: none;
+				}
+			}
+				
+         </style>
+		<div class="hotline-phone-ring-wrap2">
+			<div class="hotline-phone-ring2">
+				<div class="hotline-phone-ring-circle2"></div>
+				<div class="hotline-phone-ring-circle-fill2"></div>
+				<div class="hotline-phone-ring-img-circle2">
+					<a href="https://achamcong.net/user/register" class="pps-btn-img2" target="_blank">
+						<?php if ( 'style1' == $data['style'] ) {
+							$icon = HPR_ASSETS_URL . 'images/icon-1.png';
+						} else {
+							$icon = HPR_ASSETS_URL . 'images/icon-2.png';
+						} ?>
+						<i class="fa fa-laptop" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+			<?php if ( 'off' === $hotline_bar ) : ?>
+			<div class="hotline-bar2">
+				<a href="https://achamcong.net/user/register" target="_blank">
+					<span class="text-hotline">Dùng Thử Ngay</span>
+				</a>
+			</div>
+			<?php endif; ?>
+		</div>
 	<?php
 	}
 
